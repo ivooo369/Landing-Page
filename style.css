@@ -11,7 +11,7 @@ a {
   font-size: 18px;
 }
 
-img {
+.logo {
   width: 50px;
   height: 50px;
   border: 2px solid #e6321a;
@@ -19,14 +19,14 @@ img {
   transition: transform 1s ease-in-out;
 }
 
-.header {
+.navbar {
   display: flex;
   justify-content: space-between;
   background-color: #000000;
 }
 
-.left,
-.right {
+.div-left,
+.div-right {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -53,6 +53,69 @@ label:hover {
   font-size: 25px;
 }
 
-img:hover {
+.logo:hover {
   transform: rotate(360deg);
+}
+
+.div-header {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #3e6f4e;
+  color: #ffffff;
+  padding: 50px;
+}
+
+.picture {
+  width: 500px;
+  height: auto;
+  border: 5px solid #ffffff;
+}
+
+.div-info,
+.div-picture {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  flex-basis: 400px;
+}
+
+.div-info {
+  align-items: flex-start;
+}
+
+.title {
+  font-family: "Franklin Gothic Medium";
+  font-size: 48px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: -5px;
+}
+
+.button-info {
+  width: 120px;
+  height: 40px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #000000;
+  border: 3px solid #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.button-info:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #dee61a;
+  box-shadow: 0 0.5em 2em 0.5em #dee61a;
+  transform: translateY(-0.15em);
+  cursor: pointer;
+}
+
+.picture:hover {
+  border: 5px solid #000000;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
