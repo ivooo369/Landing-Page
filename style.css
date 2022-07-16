@@ -119,3 +119,41 @@ p {
   border: 5px solid #000000;
   transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
+
+h2 {
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+}
+
+.div-characters {
+  background-color: #d2c4ae;
+  padding: 20px;
+}
+
+.div-character-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-characters-pictures {
+  display: flex;
+  justify-content: space-around;
+}
+
+.div-characters-pictures img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #000000;
+}
+
+.div-characters-pictures p {
+  padding: 15px;
+}
+
+.div-characters-pictures img:hover {
+  border: 5px solid #a3230d;
+  width: 220px;
+  height: 220px;
+  box-shadow: 0 0.5em 2em 0.5em #a3230d;
+}
