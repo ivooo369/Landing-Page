@@ -3,6 +3,8 @@
 body {
   margin: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar a {
@@ -36,7 +38,7 @@ body {
   padding: 8px;
 }
 
-label {
+.div-left label {
   color: #ffffff;
   font-family: monospace;
   font-size: 20px;
@@ -93,7 +95,7 @@ p {
   transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
-h2 {
+.div-characters h2 {
   text-align: center;
   margin: 0;
   padding: 25px;
@@ -134,6 +136,91 @@ h2 {
   font-size: 18px;
 }
 
+.div-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 50px;
+  background-color: #6d9b6a;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.div-quote .quote {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: Roboto, Arial;
+  margin-bottom: 25px;
+}
+
+.div-quote .author {
+  font-size: 20px;
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  align-self: center;
+  margin: 0;
+}
+
+.div-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.div-contact h2 {
+  font-size: 30px;
+  padding: 15px;
+}
+
+.Gmail {
+  font-size: 25px;
+}
+
+.div-GitHub,
+.div-Facebook {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.GitHub-a,
+.Facebook-a {
+  margin: 0;
+  align-self: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.GitHub-icon,
+.Facebook-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.Pointing-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+footer p {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0;
+}
+
 .div-characters-pictures img:hover {
   border: 5px solid #a3230d;
   transform: scale(1.05);
@@ -144,7 +231,7 @@ h2 {
   color: #e6321a;
 }
 
-label:hover {
+.div-left label:hover {
   color: #dee61a;
   font-weight: bold;
   transform: scale(1.1);
@@ -166,4 +253,11 @@ label:hover {
 .picture:hover {
   border: 5px solid #000000;
   transform: scale(1.05);
+}
+
+.div-GitHub:hover .GitHub-icon,
+.div-GitHub:hover .GitHub-a,
+.div-Facebook:hover .Facebook-icon,
+.div-Facebook:hover .Facebook-a {
+  transform: scale(1.1);
 }
