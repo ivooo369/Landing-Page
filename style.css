@@ -38,11 +38,12 @@ body {
   padding: 8px;
 }
 
-.div-left label {
+.div-left p {
   color: #ffffff;
   font-family: monospace;
   font-size: 20px;
   transition: 0.3s ease-in-out;
+  margin: 0;
 }
 
 .div-header {
@@ -115,6 +116,7 @@ p {
 .div-characters-pictures {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
 .div-characters-pictures img {
@@ -126,8 +128,11 @@ p {
 }
 
 .div-characters-pictures p {
-  padding: 10px;
-  margin: 0;
+  font-size: 17px;
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 0;
+  transition: 0.3s ease-in-out;
 }
 
 .div-characters a {
@@ -185,6 +190,7 @@ p {
   display: flex;
   align-items: center;
   padding: 8px 0;
+  width: 200px;
 }
 
 .GitHub-a,
@@ -221,24 +227,40 @@ footer p {
   margin: 0;
 }
 
-.div-characters-pictures img:hover {
+.Levi:hover .Levi-img,
+.Eren:hover .Eren-img,
+.Mikasa:hover .Mikasa-img,
+.Armin:hover .Armin-img,
+.Hange:hover .Hange-img,
+.Erwin:hover .Erwin-img,
+.Reiner:hover .Reiner-img {
   border: 5px solid #a3230d;
   transform: scale(1.05);
   box-shadow: 0 0.5em 2em 0.5em #a3230d;
+}
+
+.Levi:hover .Levi-p,
+.Eren:hover .Eren-p,
+.Mikasa:hover .Mikasa-p,
+.Armin:hover .Armin-p,
+.Hange:hover .Hange-p,
+.Erwin:hover .Erwin-p,
+.Reiner:hover .Reiner-p {
+  transform: scale(1.1);
 }
 
 .navbar a:hover {
   color: #e6321a;
 }
 
-.div-left label:hover {
+.div-left:hover .logo {
+  transform: rotate(360deg);
+}
+
+.div-left:hover p {
   color: #dee61a;
   font-weight: bold;
   transform: scale(1.1);
-}
-
-.logo:hover {
-  transform: rotate(360deg);
 }
 
 .button-info:hover {
