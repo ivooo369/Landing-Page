@@ -28,6 +28,11 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #000000;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .div-left,
@@ -35,7 +40,8 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 8px;
+  padding: 5px;
+  margin: 0 4px;
 }
 
 .div-left p {
