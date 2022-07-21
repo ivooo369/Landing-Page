@@ -119,6 +119,13 @@ p {
   flex-direction: column;
 }
 
+.div-characters-button {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
 .div-characters-pictures {
   display: flex;
   justify-content: space-evenly;
@@ -145,6 +152,19 @@ p {
   text-decoration: none;
   color: #000000;
   font-size: 18px;
+}
+
+.button-characters {
+  width: 120px;
+  height: 40px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #000000;
+  border: 3px solid #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
 .div-quote {
@@ -281,6 +301,15 @@ footer p {
 .picture:hover {
   border: 5px solid #000000;
   transform: scale(1.05);
+}
+
+.button-characters:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #a3230d;
+  box-shadow: 0 0.5em 2em 0.5em #a3230d;
+  transform: translateY(-0.15em);
+  cursor: pointer;
 }
 
 .div-GitHub:hover .GitHub-icon,
