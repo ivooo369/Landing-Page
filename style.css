@@ -68,8 +68,8 @@ body {
   background-color: #3e6f4e;
   color: #ffffff;
   width: 100%;
-  height: 665px;
-  margin-top: 60px;
+  height: 700px;
+  margin-top: 25px;
 }
 
 .picture {
@@ -131,7 +131,7 @@ p {
   padding: 20px;
 }
 
-.div-character-info {
+.div-characters-info {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -140,9 +140,7 @@ p {
 .div-characters-button {
   display: flex;
   flex-direction: column;
-  margin: 40px auto;
-  width: 120px;
-  height: 40px;
+  margin: 50px auto;
 }
 
 .div-characters-pictures {
@@ -160,7 +158,7 @@ p {
   border-radius: 10%;
 }
 
-.div-individual p {
+.div-characters-info p {
   font-size: 17px;
   font-weight: bold;
   font-family: cursive;
@@ -188,12 +186,17 @@ p {
   transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
+.div-characters-button {
+  width: 120px;
+  height: 40px;
+}
+
 .div-quote {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  padding: 68px;
+  padding: 55px;
   background-color: #6d9b6a;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
@@ -215,18 +218,23 @@ p {
   margin: 0;
 }
 
-.div-contact {
+.div-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  margin: 35px auto 60px auto;
+  margin: 55px auto 80px auto;
 }
 
-.div-contact h2 {
+.div-contacts h2 {
   font-size: 30px;
   padding: 25px;
   text-decoration-line: underline;
+}
+
+.div-accounts {
+  display: flex;
+  flex-direction: column;
 }
 
 .Gmail {
@@ -237,7 +245,7 @@ p {
 .div-Facebook {
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  padding: 5px 0;
   width: 200px;
 }
 
@@ -247,7 +255,7 @@ p {
   align-self: center;
   font-size: 20px;
   font-weight: bold;
-  margin: 10px;
+  padding: 10px;
   color: black;
   text-decoration: none;
   transition: 0.3s ease-in-out;
@@ -275,23 +283,23 @@ footer p {
   margin: 0;
 }
 
-.div-individual:hover .Levi-img,
-.div-individual:hover .Eren-img,
-.div-individual:hover .Mikasa-img,
-.div-individual:hover .Armin-img,
-.div-individual:hover .Hange-img,
-.div-individual:hover .Erwin-img {
+.div-characters-info:hover .Levi-img,
+.div-characters-info:hover .Eren-img,
+.div-characters-info:hover .Mikasa-img,
+.div-characters-info:hover .Armin-img,
+.div-characters-info:hover .Hange-img,
+.div-characters-info:hover .Erwin-img {
   border: 5px solid #a3230d;
   transform: scale(1.05);
   box-shadow: 0 0.5em 2em 0.5em #a3230d;
 }
 
-.div-individual:hover .Levi-p,
-.div-individual:hover .Eren-p,
-.div-individual:hover .Mikasa-p,
-.div-individual:hover .Armin-p,
-.div-individual:hover .Hange-p,
-.div-individual:hover .Erwin-p {
+.div-characters-info:hover .Levi-p,
+.div-characters-info:hover .Eren-p,
+.div-characters-info:hover .Mikasa-p,
+.div-characters-info:hover .Armin-p,
+.div-characters-info:hover .Hange-p,
+.div-characters-info:hover .Erwin-p {
   font-weight: bold;
   transform: scale(1.1);
 }
@@ -348,11 +356,12 @@ footer p {
     display: none;
   }
   .logo {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
   .div-header {
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
   .div-right a {
@@ -365,41 +374,88 @@ footer p {
     font-size: 20px;
   }
   .div-info a {
-    margin: auto;
+    margin: 0 auto;
+  }
+  .div-info {
+    justify-content: flex-end;
+    margin-top: 60px;
   }
   .div-picture {
-    display: none;
+    justify-content: flex-start;
+    margin-top: 50px;
   }
-  .div-character-info {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100px;
-    height: 100px;
+  .picture {
+    width: 300px;
+    height: auto;
   }
   .div-characters {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   .div-characters-pictures {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .div-characters-info {
+    margin: 5px;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .div-characters-info img {
+    width: 100px;
+    height: auto;
   }
   .div-characters h2 {
-    padding: 20px 0 15px 0;
+    margin: 50px 0 15px 0;
     font-size: 22px;
   }
-  .div-character-info {
+  .div-characters-info p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+  }
+  .div-characters-button {
     display: flex;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
   }
-  .div-character-info img,
-  .div-character-info a {
-    width: 40px;
-    height: 40px;
+  .button-characters,
+  .div-characters-button a {
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
   }
-  .div-character-info p {
-    font-size: 10px;
+  .div-quote {
+    padding: 35px;
+  }
+  .div-quote .quote {
+    font-size: 25px;
+    text-align: center;
+  }
+  .div-quote .author {
+    font-size: 16px;
+    text-align: center;
+  }
+  .div-contacts h2 {
+    font-size: 25px;
+    padding: 20px;
+  }
+  .div-contacts {
+    margin: 40px auto 60px auto;
+  }
+  .Gmail {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .div-accounts {
+    align-items: center;
+  }
+  footer p {
+    padding: 10px;
+    font-size: 18px;
   }
 }
