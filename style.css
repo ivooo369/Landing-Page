@@ -45,8 +45,8 @@ body {
   z-index: 1;
 }
 
-.div-left,
-.div-right {
+.nav-left,
+.nav-right {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -54,7 +54,7 @@ body {
   margin: 0 5px;
 }
 
-.div-left p {
+.nav-left p {
   color: #ffffff;
   font-family: monospace;
   font-size: 20px;
@@ -158,7 +158,7 @@ p {
   border-radius: 10%;
 }
 
-.div-characters-info p {
+figcaption {
   font-size: 17px;
   font-weight: bold;
   font-family: cursive;
@@ -191,7 +191,7 @@ p {
   height: 40px;
 }
 
-.div-quote {
+blockquote {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,9 +200,6 @@ p {
   background-color: #6d9b6a;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
-}
-
-.div-quote .quote {
   font-size: 35px;
   font-style: italic;
   font-weight: lighter;
@@ -210,12 +207,12 @@ p {
   margin-bottom: 25px;
 }
 
-.div-quote .author {
+blockquote .author {
   font-size: 20px;
   font-family: Roboto, Arial;
   font-weight: bold;
   align-self: center;
-  margin: 0;
+  margin-top: 20px;
 }
 
 .div-contacts {
@@ -223,7 +220,7 @@ p {
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  margin: 55px auto 80px auto;
+  margin: 45px auto 70px auto;
 }
 
 .div-contacts h2 {
@@ -283,23 +280,13 @@ footer p {
   margin: 0;
 }
 
-.div-characters-info:hover .Levi-img,
-.div-characters-info:hover .Eren-img,
-.div-characters-info:hover .Mikasa-img,
-.div-characters-info:hover .Armin-img,
-.div-characters-info:hover .Hange-img,
-.div-characters-info:hover .Erwin-img {
+.div-characters-info:hover img {
   border: 5px solid #a3230d;
   transform: scale(1.05);
   box-shadow: 0 0.5em 2em 0.5em #a3230d;
 }
 
-.div-characters-info:hover .Levi-p,
-.div-characters-info:hover .Eren-p,
-.div-characters-info:hover .Mikasa-p,
-.div-characters-info:hover .Armin-p,
-.div-characters-info:hover .Hange-p,
-.div-characters-info:hover .Erwin-p {
+.div-characters-info:hover figcaption {
   font-weight: bold;
   transform: scale(1.1);
 }
@@ -308,11 +295,11 @@ footer p {
   color: #e6321a;
 }
 
-.div-left:hover .logo {
+.nav-left:hover .logo {
   transform: rotate(360deg);
 }
 
-.div-left:hover p {
+.nav-left:hover p {
   color: #dee61a;
   font-weight: bold;
   transform: scale(1.1);
@@ -352,7 +339,7 @@ footer p {
   .container {
     width: 100%;
   }
-  .div-left p {
+  .nav-left p {
     display: none;
   }
   .logo {
@@ -364,7 +351,7 @@ footer p {
     flex-direction: column;
     text-align: center;
   }
-  .div-right a {
+  .nav-right a {
     font-size: 15px;
   }
   .title {
@@ -411,7 +398,7 @@ footer p {
     margin: 50px 0 15px 0;
     font-size: 22px;
   }
-  .div-characters-info p {
+  figcaption {
     font-size: 12px;
     margin: 0;
     text-align: center;
@@ -428,14 +415,12 @@ footer p {
     height: 30px;
     font-size: 15px;
   }
-  .div-quote {
+  blockquote {
     padding: 35px;
-  }
-  .div-quote .quote {
     font-size: 25px;
     text-align: center;
   }
-  .div-quote .author {
+  blockquote .author {
     font-size: 16px;
     text-align: center;
   }
@@ -444,7 +429,7 @@ footer p {
     padding: 20px;
   }
   .div-contacts {
-    margin: 40px auto 60px auto;
+    margin: 20px auto 40px auto;
   }
   .Gmail {
     font-size: 20px;
