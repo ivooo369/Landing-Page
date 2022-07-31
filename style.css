@@ -2,7 +2,6 @@
 
 html,
 body {
-  margin: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   flex-direction: column;
@@ -59,7 +58,6 @@ body {
   font-family: monospace;
   font-size: 20px;
   transition: 0.3s ease-in-out;
-  margin: 0;
 }
 
 .div-header {
@@ -145,7 +143,6 @@ p {
   display: flex;
   justify-content: space-evenly;
   padding: 20px 0;
-  margin: 0;
 }
 
 .div-characters-pictures img {
@@ -160,9 +157,7 @@ figcaption {
   font-size: 17px;
   font-weight: bold;
   font-family: cursive;
-  padding: 0;
   margin-top: 12px;
-  margin-bottom: 0;
   transition: 0.3s ease-in-out;
 }
 
@@ -195,7 +190,7 @@ blockquote .author {
   margin-top: 20px;
 }
 
-.div-contacts {
+.div-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,7 +198,7 @@ blockquote .author {
   margin: 45px auto 70px auto;
 }
 
-.div-contacts h2 {
+.div-contact h2 {
   font-size: 30px;
   padding: 25px;
   text-decoration-line: underline;
@@ -229,7 +224,6 @@ blockquote .author {
 .GitHub-a,
 .Facebook-a {
   padding: 10px;
-  margin: 0;
   align-self: center;
   font-size: 20px;
   font-weight: bold;
@@ -261,7 +255,6 @@ footer p {
   background-color: #000000;
   color: #ffffff;
   padding: 20px;
-  margin: 0;
 }
 
 .div-characters-info:hover img {
@@ -335,9 +328,12 @@ footer p {
     flex-direction: column;
     text-align: center;
   }
+  .nav-right,
   .nav-right a {
+    gap: 15px;
     font-size: 15px;
   }
+
   .title {
     font-size: 35px;
   }
@@ -399,11 +395,11 @@ footer p {
     font-size: 16px;
     text-align: center;
   }
-  .div-contacts h2 {
+  .div-contact h2 {
     font-size: 25px;
     padding: 20px;
   }
-  .div-contacts {
+  .div-contact {
     margin: 20px auto 40px auto;
   }
   .Gmail {
